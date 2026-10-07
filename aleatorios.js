@@ -21,7 +21,10 @@ function generarAleatorios(){
         //c.
         for(let i=0;i<num;i++){
             console.log(i);
+            let numAleatorio=generarNumAleatorio();
+            aleatorios.push(numAleatorio);
         }
+        console.log(aleatorios);
     }else{
         alert("Ingresa un numero entre 5 y 20");
     }
