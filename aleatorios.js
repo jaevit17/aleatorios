@@ -18,7 +18,10 @@ function generarAleatorios(){
     let num=parseInt(txtNum);
 
     if(num>=5&&num<=20){
-
+        //c.
+        for(let i=0;i<num;i++){
+            console.log(i);
+        }
     }else{
         alert("Ingresa un numero entre 5 y 20");
     }
