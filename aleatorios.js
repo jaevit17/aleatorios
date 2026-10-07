@@ -7,3 +7,19 @@ function generarNumAleatorio(){
     let numeroAleatorio=numInt+1;
     return numeroAleatorio;
 }
+
+//
+function generarAleatorios(){
+    //a.
+    let aleatorios=[];
+    //b.
+    let cmpNum=document.getElementById("txtNum");
+    txtNum=cmpNum.value;
+    let num=parseInt(txtNum);
+
+    if(num>=5&&num<=20){
+
+    }else{
+        alert("Ingresa un numero entre 5 y 20");
+    }
+}
