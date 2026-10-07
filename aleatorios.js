@@ -8,7 +8,8 @@ function generarNumAleatorio(){
     return numeroAleatorio;
 }
 
-//
+
+//Con numero recuperado crea tamaño indice y muestra arreglo
 function generarAleatorios(){
     //a.
     let aleatorios=[];
@@ -21,11 +22,34 @@ function generarAleatorios(){
         //c.
         for(let i=0;i<num;i++){
             console.log(i);
+            //e.
             let numAleatorio=generarNumAleatorio();
             aleatorios.push(numAleatorio);
         }
         console.log(aleatorios);
+        mostrarResultados(aleatorios);
     }else{
         alert("Ingresa un numero entre 5 y 20");
     }
+}
+
+
+//Muestra tabla en pantalla
+function mostrarResultados(arregloNumeros){
+    let contenidoTabla="";
+    contenidoTabla+="<table>"+
+                    "<tr>"+
+                    "<th>Tabla</th>"+
+                    "</tr>";
+    for(let i=0;i<arregloNumeros.length;i++){
+        contenidoTabla+="<tr>"+
+                        "<td>"+arregloNumeros[i]+"</td>"+
+                        "</tr>";
+    }
+    contenidoTabla+="</table>";
+    let cmpTabla=document.getElementById("txtTabla");
+    cmpTabla.innerHTML=contenidoTabla;
+
+
+
 }
